@@ -82,3 +82,20 @@ _This is simply a shorthand way to create Javascript objects in code_
 ### Function constructors
 _A normal function that is used to construct objects_
 This 'this' variable points to a new empty object, and that object is returned from the function automatically.
+
+
+### Primitives
+_A type of data that represents a single value_
+Such as a number or a string. In other words, **not an object**
+
+**Passing by Value or Passing by Reference**
+a = b //passing something by value, it gets compiled
+
+**Passing by Reference**
+When you reference a value within an Object, you are passing by reference and therefore able to modify the existing values.
+
+
+## Immediately Invoked Function Expressions (IIFE)
+
+**Scope**
+Where in code you have access to a particular variable or function.
