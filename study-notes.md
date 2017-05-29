@@ -29,4 +29,56 @@ ECMASCRIPT: The standard javascript is based on. Needed because there are so man
 **A Javascript Engine:** A program that converts JS code into something the computer processor can understand.
 
 ## V8 under the hood
-Google's V8 engine is open sources and editable
+Google's V8 engine is open sources and editable. It's written in C and supports the ECMA standard. In addition, Node extended Javascript in order to be a fully functioning server programming language. Crazy stuff.
+
+
+## Modules && require
+
+modules.exports exposes values from other sources
+
+### Objects and Object Literals
+Name / Value pairs: A name which maps to a value
+
+_The name may be defined more than once, but only can have one value in a any given **context**_
+
+**Object:** A collection of name/value pairs
+_The simplest definition when talking about Javascript_
+
+
+* name
+  * name
+    * name/value
+    * name/value
+  * name
+    * name/value
+
+Javascript objects are names, connected to Values
+
+* Object
+  * Primitive "property"
+  * Function "method"
+  * Object "property"
+
+**Object Literal:** Name/Value pairs separated by commands and surrounded by curly braces
+_This is simply a shorthand way to create Javascript objects in code_
+
+{
+  Street: 'Main',
+  Number:100,
+  Apartment: {
+    Floor: 3,
+    Number: 301
+  }
+}
+
+
+## Inheritance: One Object gets access to the properties and methods of another object.
+
+**Prototypal Inheritance**
+"Prototype chain" - access to anything down the Line
+
+### How to we manage this?
+
+### Function constructors
+_A normal function that is used to construct objects_
+This 'this' variable points to a new empty object, and that object is returned from the function automatically.
