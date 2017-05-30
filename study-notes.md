@@ -99,3 +99,12 @@ When you reference a value within an Object, you are passing by reference and th
 
 **Scope**
 Where in code you have access to a particular variable or function.
+
+* **Require** is a function, that you pass a 'path' into
+* **module.exports** is what the require function returns
+* This works because **your code is actually wrapped in a function** that is given these things as function parameters
+
+
+## The Revealing Module Patter
+_Exposing only the properties and methods you want via a returned object_
+A very common and clean way to structure and protect code within modules.
